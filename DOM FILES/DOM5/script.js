@@ -20,13 +20,28 @@ button.addEventListener('click',()=>{
             let ul=li.parentElement
             ul.removeChild(li)
         }
-        else if(event.target.className==="up"){
+
+
+
+        else if(event.target.className==="up"){        // to up element
+            let li=event.target.parentElement
+            let ul=li.parentElement
+            let prev=li.previousElementSibling
+            if(prev){
+                ul.insertBefore(li,prev)
+            }
 
 
 
 
         }
-        else if(event.target.className==="down"){
+        else if(event.target.className==="down"){       // to down element
+            let li=event.target.parentElement
+            let ul=li.parentElement
+            let next=li.nextElementSibling
+            if(next){
+                ul.insertBefore(li,next)
+            }
 
 
 
@@ -51,7 +66,7 @@ function CreateButton(li){
 
     let down=document.createElement('button')   //<button>--</button>
     down.textContent= 'Down'                 //<button>Down</button>
-    down.className='down'
+    down.className='down'                     //<button class=down>Down</button>
     li.appendChild(down)
 
 
