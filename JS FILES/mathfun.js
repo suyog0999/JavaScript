@@ -48,11 +48,12 @@ console.log('*****************************************')
 
 
 let random = Math.floor(Math.random()*6)+1 
-console.log(random)      //o/p-->  0 ,1,2,3,4,5 6
+console.log(random)      //o/p-->  1,2,3,4,5 6
 
 
 
 console.log('*****************************************') 
+
 
 
 
