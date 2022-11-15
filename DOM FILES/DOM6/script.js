@@ -24,8 +24,12 @@ console.log(htmlCollection.length)   // 5
 let classOne = document.querySelectorAll('.bbb') // showing nodeList  NodeList(3)  [p.bbb, p.bbb, p.bbb]
 console.log(classOne)
 
+console.log(classOne.length)
+
 let classTwo = document.getElementsByClassName('bbb')  // showing htmlCollection   HTMLCollection(3) [p.bbb, p.bbb, p.bbb]
 console.log(classTwo)
+console.log(classTwo.length)
+
 
 //document.getElementById('city')  -  single element
 //document.getElementsByTagName('p') - htmlCollection
