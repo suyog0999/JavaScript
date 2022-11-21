@@ -37,36 +37,7 @@ employee.forEach(el=>
 console.log(employee)
 
 // o/p-->
-// [
-//     {
-//       firstName: 'Suyog',
-//       lastName: 'Rahane',
-//       age: 22,
-//       city: 'Sangamner',
-//       skills: [ 'Javascript', 'default', 'c' ]
-//     },
-//     {
-//       firstName: 'Amol',
-//       lastName: 'Vetal',
-//       age: 23,
-//       city: 'Talegoan',
-//       skills: [ 'SQL', 'default', 'MangoDB' ]
-//     },
-//     {
-//       firstName: 'Mansi',
-//       lastName: 'Khatode',
-//       age: 32,
-//       skills: [ 'Java', 'default', 'Manual' ]
-//     },
-//     {
-//       firstName: 'Samir',
-//       lastName: 'Choughule',
-//       age: 40,
-//       city: 'Pune',
-//       skills: [ 'Java', 'default', 'React' ]
-//     }
-//   ]
-//   PS C:\Users\technOrbit\Desktop\JavaScript> node objectarray2.js
+ 
 //   [
 //     {
 //       firstName: 'Suyog',

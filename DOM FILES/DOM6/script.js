@@ -12,6 +12,7 @@
 // let classN = document.querySelector('.bbb')
 // let name = document.querySelector('p[name="three"]')
 
+
 let id = document.getElementById('city')
 console.log(id)  // <p id="city">Sangamner is beautiful city</p>
 
@@ -21,19 +22,30 @@ console.log(nodeList.length) // 5
 let htmlCollection = document.getElementsByTagName('p')
 console.log(htmlCollection.length)   // 5
 
+
+
+//  at the run time when we delete html element the querySelectorAll(NodeList) length is not updated
+
 let classOne = document.querySelectorAll('.bbb') // showing nodeList  NodeList(3)  [p.bbb, p.bbb, p.bbb]
 console.log(classOne)
 
-console.log(classOne.length)
+console.log(classOne.length)//3
+
+
+//  at the run time when we delete html element the getElementsByClassName(htmlCollection) length is  updated
 
 let classTwo = document.getElementsByClassName('bbb')  // showing htmlCollection   HTMLCollection(3) [p.bbb, p.bbb, p.bbb]
 console.log(classTwo)
-console.log(classTwo.length)
+console.log(classTwo.length)  //3
+
+//document.querySelectorAll('.bbb') --> NodeList()
+//document.getElementById('city')  -->  single element
+//document.getElementsByTagName('p') --> htmlCollection()
+//document.getElementsByClassName('bbb') --> htmlCollection()
 
 
-//document.getElementById('city')  -  single element
-//document.getElementsByTagName('p') - htmlCollection
-//document.getElementsByClassName('bbb') - htmlCollection
+
+
 
 //----------------------- Attribute -----------------------
 let pElement = document.querySelector('.aaa')
