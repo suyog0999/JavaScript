@@ -31,6 +31,18 @@ class Bank {
 
     }
 
+
+    totalDepositAmmount() {
+        let totalDepositAmmount = this.transaction.filter((el) => { return el > 0 }).reduce((acc, el) => { return acc + el }, 0)
+        console.log(totalDepositAmmount)
+    }
+
+
+    totalWithdrawlAmmount() {
+        let totalWithdrawlAmmount = this.transaction.filter((el) => { return el < 0 }).reduce((acc, el) => { return acc + el }, 0)
+        console.log(totalWithdrawlAmmount)
+    }
+
 }
 
 let suyog = new Bank(10000, 111, 'Sangamner', 'GaneshNagar')
@@ -76,15 +88,18 @@ console.log(last4tr)
 console.log("************************************************************************************")
 
 
-// TOTAL DEPOSIT AMMOUNT
-let totalDepositAmmount = suyog.transaction.filter((el) => { return el > 0 }).reduce((acc, el) => { return acc + el }, 0)
-console.log(totalDepositAmmount)  // o/p--> 700
+suyog.totalDepositAmmount() // o/p--> 700
+suyog.totalWithdrawlAmmount()  // o/p-->  -8500
 
-// TOTAL WITHDRAWL AMMOUNT
-let totalWithdrawlAmmount = suyog.transaction.filter((el) => { return el < 0 }).reduce((acc, el) => { return acc + el }, 0)
-console.log(totalWithdrawlAmmount)  // o/p--> -8500
+// // TOTAL DEPOSIT AMMOUNT
+// let totalDepositAmmount = suyog.transaction.filter((el) => { return el > 0 }).reduce((acc, el) => { return acc + el }, 0)
+// console.log(totalDepositAmmount)  // o/p--> 700
 
-console.log(Math.abs(totalWithdrawlAmmount))  //o/p--> 8500  --> it's use to convert negative value to positive value
+// // TOTAL WITHDRAWL AMMOUNT
+// let totalWithdrawlAmmount = suyog.transaction.filter((el) => { return el < 0 }).reduce((acc, el) => { return acc + el }, 0)
+// console.log(totalWithdrawlAmmount)  // o/p--> -8500
+
+// console.log(Math.abs(totalWithdrawlAmmount))  //o/p--> 8500  --> it's use to convert negative value to positive value
 
 
 // or
