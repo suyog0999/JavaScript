@@ -91,3 +91,4 @@ for (i = 0; i < arr.length; i++) {
     }
 }
 console.log(arr1)
+// o/p --> [ 55, 44, 67,  8, 65, 1,  2,  3, 34,  5 ]
