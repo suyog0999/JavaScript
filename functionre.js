@@ -84,7 +84,7 @@ console.log(`--------------------------------------------`)
 
 
 
-//function without parameter and with return type
+//function without parameter and without return type
 
 function ADD()
 {

@@ -28,7 +28,7 @@ calculator(9,9)
 
 
 
-//function without parameter and with return type
+//function without parameter and without return type
 function add()
 {
     console.log(9+9)

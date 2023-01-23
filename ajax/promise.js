@@ -6,8 +6,9 @@
 
 
 // 2. promise ( pending , resolve , reject)
-//to execute asynch code synchronously
-//to execute asynch code with parallel execution
+// In promise first parameter is always resolve
+// to execute asynch code synchronously
+// to execute asynch code with parallel execution
 
 // program 1
 
