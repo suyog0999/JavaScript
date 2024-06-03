@@ -47,7 +47,7 @@ sub()
 
 console.log("*******************************************************************")
 
-// closure
+// closure --> closure is gives you access to an outer function scope from inner function scope
 
 function mul(){
     let g=5

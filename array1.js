@@ -54,7 +54,7 @@ console.log(a6)                                  //o/p->   [ 'hydrabad', 'banglo
 
 //10.concat()-----------combine two array
 let numbers1=[11,22,33,44,55]
-let numbers2=[66,77,88,99,00]
+let numbers2=[66,77,88,99,10]
 let a7=numbers1.concat(numbers2)
 console.log(a7)                   //o/p->    [11,22,33,44,55,66,77,88,99,00
 

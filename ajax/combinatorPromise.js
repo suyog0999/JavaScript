@@ -81,7 +81,7 @@ async function getUser3() {
         new Promise(function (reject) {
             setTimeout(function () {
                 reject("bye")
-            }, 00)
+            },0)
         }),
         new Promise(function (resolve) {
             setTimeout(function () {
@@ -113,12 +113,12 @@ async function getUser4() {
         new Promise(function (resolve, reject) {
             setTimeout(function () {
                 reject("bye2")
-            }, 000)
+            }, 2000)
         }),
         new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve("hello1")
-            }, 000)
+            },0)
         }),
         new Promise(function (resolve, reject) {
             setTimeout(function () {

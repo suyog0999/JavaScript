@@ -92,3 +92,18 @@ for (i = 0; i < arr.length; i++) {
 }
 console.log(arr1)
 // o/p --> [ 55, 44, 67,  8, 65, 1,  2,  3, 34,  5 ]
+
+
+function student(fn,ln,ag)
+{
+    this.firstName=fn,
+    this.lastName=ln,
+    this.age=ag
+
+
+}
+
+let suyog=new student("suyog","rahane",23)
+console.log(suyog)
+
+
